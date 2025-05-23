@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="백다희" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>백다희 포트폴리오</title>
+  <link rel="icon" href="./images/favicon.png" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <style>
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+    }
+
+    .navbar {
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.85) !important;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #ffe2e2, #f9f9f9);
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      color: #333;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .profile-img {
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-custom {
+      background-color: white;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    footer {
+      background-color: #222;
+      color: #aaa;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #fff !important;
+    }
+
+    .nav-link:hover {
+      color: #ffc107 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Centum Hee</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Portfolio</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">디자인</a></li>
+              <li><a class="dropdown-item" href="#">영상</a></li>
+              <li><a class="dropdown-item" href="#">피그마</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Web</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>안녕하세요, 백다희입니다 👋</h1>
+      <p>디자인 · 영상편집 · UI/UX · 퍼블리싱</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <main class="my-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+          <img src="./images/고먐 (1).jpg" alt="Profile Image" class="img-fluid profile-img" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-4">📍 부산에서 활동 중</h2>
+          <p>
+            영상과 디자인을 중심으로 브랜드의 정체성을 시각적으로 표현하고,  
+            사용자의 관점에서 더 좋은 경험을 설계합니다.
+          </p>
+          <p>
+            프리미어, 애프터이펙트, 피그마 등 다양한 툴을 능숙하게 다룰 수 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- 카드 영역 -->
+      <div class="row my-5">
+        <div class="col-md-4">
+          <div class="card card-custom text-center p-4">
+            <h4>🎨 디자인</h4>
+            <p>포토샵, 일러스트를 활용한 감각적 비주얼 제작</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom text-center p-4">
+            <h4>🎬 영상 편집</h4>
+            <p>에펙 · 프리미어 기반 인터뷰, 홍보, 유튜브 콘텐츠 제작</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom text-center p-4">
+            <h4>📱 UI/UX</h4>
+            <p>Figma와 웹 퍼블리싱을 통한 실현 가능한 프로토타입 제작</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <small>&copy; 2025 백다희. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
